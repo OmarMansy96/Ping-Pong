@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    GameManager gM;
+    public AudioSource audioSource;
+    public AudioClip hitWall, hitPlayers, point, gameOver, winning;
+
     Rigidbody2D rB;
     public float ballSpeed = 100f;
     private void Awake()
@@ -22,6 +26,7 @@ public class Ball : MonoBehaviour
         rB.position = Vector3.zero;
         rB.velocity = Vector3.zero;
        Invoke( "AddStartForce",0.5f);
+       
 
     }
     void AddStartForce()
@@ -35,4 +40,15 @@ public class Ball : MonoBehaviour
     {
         rB.AddForce(force);
     }
+
+    private void OnCollisionEnter2D(Collision2D others)
+    {
+        if (others.gameObject.CompareTag("ScoringZone") ? audioSource.clip = point : audioSource.clip = hitPlayers)
+        //else if (others.gameObject.CompareTag("Walls"))
+        //{
+        //    audioSource.clip = hitWall;
+        //}
+        audioSource.Play();
+    }
+
 }
