@@ -13,12 +13,12 @@ public class Player : Paddle
     void Update()
     {
         var axis = Input.GetAxisRaw("Mouse X");
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetAxisRaw("Mouse X") > 0 && Input.GetMouseButton(0)) 
+        if (Input.GetKey(KeyCode.RightArrow) || axis > 0 && Input.GetMouseButton(0)) 
         {
             //_direction = Vector2.right;
             _direction = new Vector2(axis, 0);
         }
-        else if (Input.GetKey(KeyCode.LeftArrow) || (Input.GetAxisRaw("Mouse X") < 0 && Input.GetMouseButton(0)))
+        else if (Input.GetKey(KeyCode.LeftArrow) || axis < 0 && Input.GetMouseButton(0))
         {
           //  _direction=Vector2.left;
             _direction = new Vector2(axis, 0);
