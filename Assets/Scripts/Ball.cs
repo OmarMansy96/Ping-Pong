@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    GameManager gM;
     public AudioSource audioSource;
     public AudioClip hitWall, hitPlayers, point, gameOver, winning;
 
