@@ -17,6 +17,11 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         endPanel.SetActive(false);
+
+        float camW = Screen.width;
+        float camH = Screen.height;
+        Camera.main.aspect = camW / camH;
+
     }
     private void Update()
     {
