@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Easy.unity
     guid: 1277de89a4b8844408551a20138b009e
   - enabled: 1
-    path: Assets/Scenes/Hard.unity
-    guid: 9cd45e9652482ec41981f3047a05358a
-  - enabled: 1
     path: Assets/Scenes/Medium.unity
     guid: cc17cd918290f4344afbb2511ab05b47
+  - enabled: 1
+    path: Assets/Scenes/Hard.unity
+    guid: 9cd45e9652482ec41981f3047a05358a
   m_configObjects: {}

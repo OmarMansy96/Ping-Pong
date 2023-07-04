@@ -996,7 +996,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799767710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.5, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 0.21973383, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1014,7 +1014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caabf8bf63f2cd349b3259a1fced2577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 80
+  speed: 65
   ball: {fileID: 1618065031}
 --- !u!114 &799767716
 MonoBehaviour:
@@ -1590,7 +1590,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616159172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.5, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 0.21973383, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1608,7 +1608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52de100664048924aa5222f92ffa08a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 70
+  speed: 120
 --- !u!114 &1616159178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1777,7 +1777,7 @@ MonoBehaviour:
   point: {fileID: 8300000, guid: f2109d7286fbe33478a4c0f749d944bd, type: 3}
   gameOver: {fileID: 8300000, guid: ccc0520fe19f663468e388cd9b60bdde, type: 3}
   winning: {fileID: 0}
-  ballSpeed: 300
+  ballSpeed: 350
 --- !u!82 &1618065034
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1938,6 +1938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c9263e9d572d624b9602ae63c4d4783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exitPanel: {fileID: 0}
 --- !u!1 &1748007128
 GameObject:
   m_ObjectHideFlags: 0
